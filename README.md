@@ -53,12 +53,14 @@ OmniTrip's mode-based architecture is built to extend, not just work for one tri
 
 We developed OmniTrip's concept directly around a core problem tree — mapping the causes of fragmented travel planning to the three travel contexts (Solo, Group, OKU) that became our three modes, then branching each mode out into its feature set.
 
-![Ideation problem tree — mapping the core problem through causes and effects to the Solo, Group, and OKU mode feature sets](images/ideation-problem-tree.png)
+
+<img width="1072" height="781" alt="未命名绘图 drawio (1)" src="https://github.com/user-attachments/assets/788c01f3-3838-4410-885b-846fe7e54273" />
 *Figure: our full ideation map — from the root problem, through the three modes it produced, down to the specific features each mode needed.*
 
 We also mapped how a trip actually moves *between* modes, since Solo and Group aren't meant to be separate apps — Group Mode unlocks automatically the moment a solo trip is shared:
 
-![Dynamic UX Transition flow — how a trip evolves from Solo to Group Mode and assigns Host/Member/Viewer roles](images/ideation-ux-transition-flow.png)
+<img width="1031" height="241" alt="未命名绘图 drawio" src="https://github.com/user-attachments/assets/383e74f6-9ffa-4e0a-81ad-bcbdbf4352d8" />
+
 *Figure: the Dynamic UX Transition flow — how a trip evolves from Solo to Group Mode without the user ever leaving the app.*
 
 As we refined the idea, a few points shifted along the way:
@@ -149,7 +151,8 @@ As we refined the idea, a few points shifted along the way:
 
 ### System Architecture Diagram
 
-![System architecture diagram — Next.js frontend connecting via REST to Node/Express and via WebSocket to Socket.io, both backed by Supabase](images/system-architecture.png)
+<img width="768" height="473" alt="System architecture diagram_Null drawio" src="https://github.com/user-attachments/assets/50d54cfa-a110-4e6d-9e81-e3821131be1f" />
+
 *Figure: Live/collaborative features (itinerary editing, voting presence) run over the Socket.io WebSocket server; everything else is a standard REST call from the Express API into Supabase, which also enforces RBAC directly via Postgres Row Level Security.*
 
 ### Build Plan & Scope
