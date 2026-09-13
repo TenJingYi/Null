@@ -85,19 +85,82 @@ As we refined the idea, a few points shifted along the way:
 
 **UI Prototype:** https://www.figma.com/proto/IMN56OiQlsxW043pLKNvZd/Travel?node-id=0-1&t=MUZnGS69mXAfD2JH-1
 
+<p align="center">
+<img width="787" height="510" alt="solodash" src="https://github.com/user-attachments/assets/43a0e837-2213-4741-974d-116bd98f2b98" />
+</p>
+
+<p align="center">
+Figure 3.1 Solo mode dashboard
+</p>
+
 **Figure 3.1 — Solo mode dashboard.** Shows a mood and personalisation engine that allows solo travellers to filter places using mood tags like chill, adventure and more. Distance and duration can also be chosen. The AI matches destinations to the user's current mood, duration and distance rather than rigid categories.
+
+<p align="center">
+<img width="797" height="512" alt="solovault" src="https://github.com/user-attachments/assets/27f2f5eb-56fd-42d6-9f05-2a06892cd3e6" />
+</p>
+
+<p align="center">
+Figure 3.2 Solo mode vault
+</p>
 
 **Figure 3.2 — Solo mode vault (evening safety check-in).** Shows the core safety system: an evening safety check-in, a lightweight security mechanism designed specifically for non-ticketed, spontaneous daytime activities. Travellers simply tap "Check Safe" at night when confirming tomorrow's plan. This also supports the 24-hour offline countdown powered by PWA Service Workers. Each evening check-in resets a local safety timer to ensure full functionality even in zero-connectivity areas. If a traveller misses their daily check-in and loses connection, the background Vault system automatically transmits encrypted emergency data and Medical IDs to a pre-set emergency contact.
 
+<p align="center">
+<img width="755" height="587" alt="soloexpenses" src="https://github.com/user-attachments/assets/916b2e32-8dc8-4cf3-9976-8993b26ab968" />
+
+</p>
+<p align="center">
+  Figure 3.3 Solo mode expenses
+</p>
+
 **Figure 3.3 — Solo mode expenses.** Shows the expense module, where users can look back at data by choosing a past date. Currency is automatically converted into the user's chosen currency — e.g. if the user OCR-scans a receipt in Thailand but the chosen currency is MYR, all amounts are automatically converted to MYR and shown in both the chart and the table.
+
+<p align="center">
+  <img width="871" height="702" alt="soloit" src="https://github.com/user-attachments/assets/0c593a29-e9f6-490b-bb6b-157a68cc8f53" />
+
+</p>
+
+<p align="center">
+  Figure 3.4 Solo mode itinerary
+</p>
 
 **Figure 3.4 — Solo mode itinerary.** Users can pick and add their preferred top activities, and the timeline displays them; users can edit or add events directly on the timeline. The AI personalisation panel lists items the user should prepare based on the activities they picked. Accommodation is already filtered based on budget and rating, and can be booked directly by tapping "Book".
 
-**Figure 3.5 — Group dashboard.** Acts as the shared command centre for a multi-traveller trip, bringing group consensus, budget, debt settlement, and document readiness into a single view. Group Consensus (88%) shows how aligned members are while flagging pending disagreements; Group Budget Pool tracks spend against total; Debt Settlement lists pending debts with a one-tap "Settle Up" that minimises the number of transactions; Vault Readiness confirms all members' documents are synced. Below, Today's Group Schedule shows an AI-optimised day plan with a proactive AI Insight banner (e.g. warning about rain), the Active Group Poll shows live voting, the Shared Preparation Checklist tracks role-assigned to-dos, and Group Real-Time Activity gives a live feed of member actions.
+<p align="center">
+  <img width="787" height="560" alt="groupdash" src="https://github.com/user-attachments/assets/590deb90-93d3-449b-a805-a1761a00551e" />
+
+</p>
+<p align="center">
+  Figure 3.5 Group mode dashboard
+</p>
+
+**Figure 3.5 — Group mode dashboard.** Acts as the shared command centre for a multi-traveller trip, bringing group consensus, budget, debt settlement, and document readiness into a single view. Group Consensus (88%) shows how aligned members are while flagging pending disagreements; Group Budget Pool tracks spend against total; Debt Settlement lists pending debts with a one-tap "Settle Up" that minimises the number of transactions; Vault Readiness confirms all members' documents are synced. Below, Today's Group Schedule shows an AI-optimised day plan with a proactive AI Insight banner (e.g. warning about rain), the Active Group Poll shows live voting, the Shared Preparation Checklist tracks role-assigned to-dos, and Group Real-Time Activity gives a live feed of member actions.
+
+<p align="center">
+  <img width="727" height="482" alt="groupexpenses" src="https://github.com/user-attachments/assets/66d64996-0873-45e2-b4d2-749896a1e4ab" />
+
+</p>
+<p align="center">
+  Figure 3.6 Group mode expense
+</p>
 
 **Figure 3.6 — Group mode expense.** A user scans a receipt, OCR extracts line items, and the split screen lets the user exclude specific members from specific items — e.g. excluding non-drinkers from the alcohol line. The Settle Up button then reduces all outstanding group debts to the minimum number of transactions.
 
+<p align="center">
+  <img width="742" height="476" alt="groupvault" src="https://github.com/user-attachments/assets/b31a1aca-238d-4f86-9036-bd5cf30fb478" />
+</p>
+<p align="center">
+  Figure 3.7 Group mode vault
+</p>
+
 **Figure 3.7 — Group mode vault.** Uses a dual-layer structure: a shared folder for group documents (hotel confirmations, flight itineraries) and personal lockers for sensitive items (passport scans, individual boarding passes). Access is enforced by Supabase Row Level Security, so a Viewer role can see the shared folder but not another member's personal locker.
+
+<p align="center">
+  <img width="731" height="491" alt="okumode" src="https://github.com/user-attachments/assets/0e2d7183-78d5-49c3-a985-947aeda89504" />
+</p>
+<p align="center">
+  Figure 3.8 OKU mode route
+</p>
 
 **Figure 3.8 — OKU mode route.** The Barrier-Free Route Radar is designed on GIS spatial data and plans routes that bypass stairs and steep slopes. When a user plans to visit a location like Batu Caves, the prototype triggers a Barrier Alert warning of the 272 stairs ahead, and the AI calculates a Step-Free Alternative (e.g. the ground-level cultural centre elevator) with one tap. The Voice-First AI Companion provides full two-way voice interaction and screen-reading for visually impaired users — e.g. "Where is the nearest OKU toilet?" — with audio instructions paired with haptic vibration cues.
 
